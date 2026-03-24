@@ -54,11 +54,7 @@ def rolling_avg(data: list, k: int) -> float:
     """
     CHALLENGE FUNCTION (Optional)
     """
-    for i in range[:len(data) + 1:]:
-        pass
-
-
-    
+    pass
 
 
 def run(file: str):
@@ -93,7 +89,6 @@ def run(file: str):
     med = round(median(cleaned_list), 2)
     rng = round(range(cleaned_list), 2)
     
-
     # print out your data quality measure to the console
 
     # print out your descriptive statistics to the console
