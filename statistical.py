@@ -1,4 +1,5 @@
 import statistics as stats
+import math 
 
 def average(data: list) -> float:
     """
@@ -40,7 +41,21 @@ def rolling_avg(data: list, k: int) -> float:
     """
     CHALLENGE FUNCTION (Optional)
     """
-    pass
+    
 
 def variance(data: list) -> float:
-    pass
+    add_numbers = 0
+    for num in data:
+        add_numbers += num
+    
+    average_num = add_numbers/len(data)
+
+    var_sum = 0
+    for point in data:
+        var_sum += math.pow((point-average_num),2)
+    
+    sam_var= var_sum / (len(data) - 1)
+
+    # sam_var = stats.variance(data)
+    
+    return sam_var
