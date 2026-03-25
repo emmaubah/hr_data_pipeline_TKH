@@ -1,60 +1,5 @@
-def clean_heartrate_data(data: list) -> tuple:
-    """
-    Clean raw heart-rate data by removing malformed or impossible values.
-    """
-    # OR USE
-    cleaned= []
-    removed_val = []
-    for item in data:
-        if item.isdigit():
-            cleaned.append(int(item))
-        else:
-            removed_val.append(item)
-
-        
-    return (cleaned,removed_val)
-
-
-def average(data: list) -> float:
-    """
-    Calculate average of a list of integers using a for-loop. Assumes data is clean.
-    """
-    add_numbers = 0
-    for num in data:
-        add_numbers += num
-    
-    average_num = add_numbers/len(data)
-
-    return average_num
-
-
-
-def median(data: list) -> float:
-    """
-    """
-    sorted_data = sorted(data)
-    
-    if len(sorted_data) % 2 == 0:
-        median_value = (sorted_data[len(sorted_data) // 2 - 1] + sorted_data[len(sorted_data) // 2]) / 2
-    else:
-        median_value = sorted_data[len(sorted_data) // 2]
-
-    return median_value
-
-def range(data: list) -> float:
-    """
-    """
-    range_value = max(data) - min(data)
-    
-
-    return range_value
-
-
-def rolling_avg(data: list, k: int) -> float:
-    """
-    CHALLENGE FUNCTION (Optional)
-    """
-    pass
+from statistical import average, median, range
+from data_cleaning import clean_heartrate_data 
 
 
 def run(file: str):
@@ -95,7 +40,7 @@ def run(file: str):
     print(f"Your heart-rate data average is: {avg}")
     print(f"Your heart-rate data median is: {med}")
     print(f"Your heart-rate data range is: {rng}")
-    print('\n')
+    print()
 
 
 if __name__ == "__main__":
