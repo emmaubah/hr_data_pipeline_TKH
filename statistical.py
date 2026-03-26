@@ -1,5 +1,6 @@
 import statistics as stats
 import math 
+import matplotlib.pyplot as plt
 
 def average(data: list) -> float:
     """
@@ -65,3 +66,9 @@ def standard_dev(data:list) -> float:
     std = stats.stdev(data)
 
     return std
+
+def line_chart(data:list) -> float:
+    fig, ax = plt.subplots(figsize = (6,5))
+    ax.plot(data)
+
+    return plt.show()
