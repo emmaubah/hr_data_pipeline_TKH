@@ -1,4 +1,4 @@
-from statistical import average, median, range, variance
+from statistical import average, median, range, variance, standard_dev
 from data_cleaning import clean_heartrate_data 
 
 
@@ -34,6 +34,7 @@ def run(file: str):
     med = round(median(cleaned_list), 2)
     rng = round(range(cleaned_list), 2)
     var = round(variance(cleaned_list), 2)
+    std = round(standard_dev(cleaned_list), 2)
     
     # print out your data quality measure to the console
 
@@ -42,7 +43,9 @@ def run(file: str):
     print(f"Your heart-rate data median is: {med}")
     print(f"Your heart-rate data range is: {rng}")
     print(f"Your heart-rate data variance is: {var}")
+    print(f"Your heart-rate data standard deviation is: {std}")
     print()
+    
 
 
 if __name__ == "__main__":

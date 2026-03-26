@@ -58,3 +58,10 @@ def variance(data: list) -> float:
     sam_var = stats.variance(data)
     
     return sam_var
+
+def standard_dev(data:list) -> float:
+    # std = math.sqrt(variance(data))
+
+    std = stats.stdev(data)
+
+    return std
