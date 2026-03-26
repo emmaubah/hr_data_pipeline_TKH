@@ -32,7 +32,6 @@ def range(data: list) -> float:
     """
     """
     range_value = max(data) - min(data)
-    
 
     return range_value
 
