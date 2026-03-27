@@ -67,8 +67,8 @@ def standard_dev(data:list) -> float:
 
     return std
 
-def line_chart(data:list) -> float:
-    fig, ax = plt.subplots(figsize = (6,5))
-    ax.plot(data)
+# def line_chart(data:list) -> float:
+#     fig, ax = plt.subplots(figsize = (6,5))
+#     ax.plot(data)
 
-    return plt.show()
+#     return plt.show()

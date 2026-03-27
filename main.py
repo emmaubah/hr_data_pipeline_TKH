@@ -1,4 +1,4 @@
-from statistical import average, median, range, variance, standard_dev, line_chart
+from statistical import average, median, range, variance, standard_dev
 from data_cleaning import clean_heartrate_data 
 
 
@@ -45,7 +45,7 @@ def run(file: str):
     print(f"Your heart-rate data range is: {rng}")
     print(f"Your heart-rate data variance is: {var}")
     print(f"Your heart-rate data standard deviation is: {std}")
-    print(line_chart(cleaned_list))
+    # print(line_chart(cleaned_list))
     print()
     
 
