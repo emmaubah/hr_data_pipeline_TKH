@@ -2,6 +2,7 @@ import statistics as stats
 import math 
 import matplotlib.pyplot as plt
 
+
 def average(data: list) -> float:
     """
     Calculate average of a list of integers using a for-loop. Assumes data is clean.
